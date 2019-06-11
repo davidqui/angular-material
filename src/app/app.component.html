@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+    <span>Probando Angular Material</span>
+    <span class="example-spacer"></span>
+    <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">done_all</mat-icon>
+    <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon>
+      <button mat-button [matMenuTriggerFor]="menu">
+      <mat-icon>view_headline</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Lista N° 1</button>
+        <button mat-menu-item>Lista N° 2</button>
+      </mat-menu>
+
+    </mat-toolbar-row>
+</mat-toolbar>
